@@ -9,7 +9,7 @@
 ![Virtual Dietitian](https://user-images.githubusercontent.com/85463443/173213305-a3233043-a29f-4a76-a15c-65ef430b5d92.png)
 
 
-##Links:
+## Links:
 
 -Heroku:
 https://virtual-nutritionist-atheerapp.herokuapp.com/
