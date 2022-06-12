@@ -2,6 +2,7 @@ package com.example.finalproject.Services;
 
 import com.example.finalproject.DTO.RequirementsDTO;
 import com.example.finalproject.Exptions.InvalidIdException;
+import com.example.finalproject.Models.Dite;
 import com.example.finalproject.Models.MyUsers;
 import com.example.finalproject.Models.Requirements;
 import com.example.finalproject.Repositorys.MyUsersRepository;
@@ -30,7 +31,12 @@ public class MyUsersService {
     }
 
     public void updateUser(MyUsers user, Integer id) throws InvalidIdException {
-        MyUsers user1 = getUserById(id);
+        MyUsers user1 = myUsersRepository.findById(id)
+                .orElseThrow(
+                        () -> new InvalidIdException("Invalid ID"));
+        user1.setUsername(user.getUsername());
+        user1.setPassword(user.getPassword());
+        user1.setRole(user.getRole());
         myUsersRepository.save(user1);
     }
 

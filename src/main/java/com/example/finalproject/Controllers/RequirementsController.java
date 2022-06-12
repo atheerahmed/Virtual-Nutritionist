@@ -25,12 +25,7 @@ public class RequirementsController {
         logger.info("Request to get  all requirements");
         return ResponseEntity.status(200).body(requirementsService.getNeeds());
     }
-    @PostMapping("/admin")
-    public ResponseEntity<API> addRequirements(@RequestBody @Valid Requirements requirements){
-        logger.info("Request to add Needs");
-        requirementsService.addNeeds(requirements);
-        return ResponseEntity.status(200).body(new API("Added new Requirement",200));
-    }
+
     @PutMapping("/{id}")
     public ResponseEntity<API> updateRequirements(@RequestBody @Valid Requirements requirements, @PathVariable Integer id) throws InvalidIdException {
         logger.info("Request to update Needs");
