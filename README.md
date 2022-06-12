@@ -8,3 +8,12 @@
 ## Class diagram:
 ![Virtual Dietitian](https://user-images.githubusercontent.com/85463443/173213305-a3233043-a29f-4a76-a15c-65ef430b5d92.png)
 
+
+##Links:
+
+-Heroku:
+https://virtual-nutritionist-atheerapp.herokuapp.com/
+
+
+-postman:
+https://documenter.getpostman.com/view/17223107/Uz5NjDQo
